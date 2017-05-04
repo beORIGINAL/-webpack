@@ -1,0 +1,86 @@
+{
+    "name": "ESS",
+    "version": "0.0.3",
+    "description": "ESS",
+    "main": "app.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "prestart": "yarn install",
+        "start": "webpack-dev-server --progress --profile -d",
+        "build": "cross-env NODE_ENV=production webpack --progress",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "AWS",
+        "Angular",
+        "Webpack",
+        "Sass",
+        "HTML5"
+    ],
+    "author": "Inc.",
+    "license": "MIT",
+    "dependencies": {
+        "angular": "1.6.4",
+        "angular-awesome-slider": "2.4.4",
+        "angular-smart-table": "2.1.8",
+        "angular-toastr": "2.1.1",
+        "angular-ui-bootstrap": "^2.5.0",
+        "angular-ui-router": "0.4.2",
+        "jquery": "3.2.1",
+        "lodash": "4.17.4",
+        "ng-stomp": "0.4.0",
+        "ng-tags-input": "3.2.0"
+    },
+    "devDependencies": {
+        "babel-core": "6.24.1",
+        "babel-loader": "7.0.0",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-polyfill": "6.23.0",
+        "babel-preset-es2015-native-modules": "^6.9.4",
+        "babel-preset-latest": "6.24.1",
+        "babel-preset-stage-0": "6.24.1",
+        "babel-runtime": "^6.23.0",
+        "bootstrap": "3.3.7",
+        "cross-env": "4.0.0",
+        "css-loader": "0.28.0",
+        "extract-text-webpack-plugin": "2.1.0",
+        "file-loader": "^0.11.1",
+        "html-webpack-plugin": "2.28.0",
+        "ng-annotate-loader": "0.6.0",
+        "ng-cache-loader": "0.0.23",
+        "node-sass": "4.5.2",
+        "postcss-loader": "1.3.3",
+        "required-loader": "^1.2.11",
+        "resolve-url-loader": "2.0.2",
+        "sass-loader": "6.0.3",
+        "style-loader": "0.16.1",
+        "webpack": "2.4.1",
+        "webpack-dashboard": "0.4.0",
+        "webpack-dev-server": "2.4.5"
+    },
+    "engines": {
+        "node": ">= 4.2.1",
+        "npm": ">= 3",
+        "yarn": "0.16.0"
+    },
+    "babel": {
+        "presets": [
+            [
+                "latest",
+                {
+                    "modules": false
+                }
+            ],
+            "stage-0",
+            "es2015-native-modules"
+        ],
+        "plugins": [
+            "transform-runtime"
+        ],
+        "ignore": [
+            "node_modules"
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+### Node ###
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids/
+logs/
+results/
+test-results/
+npm-debug.log
+node_modules/
+build/
+nuget_packages/
+
+### Linux ###
+.*
+!.gitignore
+!.git*
+!.editorconfig
+!.npmignore
+!.npmrc
+!.eslintrc
+*~
+
+### SASS ###
+### SASS Ignores - "Sassy CSS" http://sass-lang.com/
+*.sass-cache
